@@ -251,11 +251,13 @@ class EmployeeController extends Controller
                 }
             }
         }
+
+
         return redirect()->route('admin.user.index')->with('create','Update successfully');
     }
 
   //delete
-
+  
     public function destroy($id)
     {
         $dep=Employee::findOrFail($id)->delete();

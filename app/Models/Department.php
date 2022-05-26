@@ -11,8 +11,9 @@ class Department extends Model
     use HasFactory;
     protected $guarded= [];
 
-    public function Position()
+  
+    public function position()
     {
-      return $this->hasMany(Position::class,'dep_id');
+        return $this->hasMany(Position::class);
     }
 }

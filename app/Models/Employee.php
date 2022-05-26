@@ -20,10 +20,10 @@ class Employee extends Model
 
     public function state()
     {
-        return $this->belongsTo(state::class);
+        return $this->belongsTo(state::class,'state');
     }
     public function city()
     {
-        return $this->belongsTo(city::class);
+        return $this->belongsTo(city::class,'city');
     }
 }
